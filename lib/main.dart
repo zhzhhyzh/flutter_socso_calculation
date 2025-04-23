@@ -82,6 +82,7 @@ class _MyHomePageState extends State<MyHomePage> {
               TextFormField(
                 decoration: InputDecoration(hintText: 'Age'),
                 inputFormatters: [FilteringTextInputFormatter.digitsOnly],
+                keyboardType: TextInputType.number,
                 controller: _ageCtrl,
                 validator: (value) {
                   if (value == '') {
@@ -99,6 +100,7 @@ class _MyHomePageState extends State<MyHomePage> {
               TextFormField(
                 decoration: InputDecoration(hintText: 'Gross Salary'),
                 inputFormatters: [FilteringTextInputFormatter.digitsOnly],
+                keyboardType: TextInputType.number,
                 controller: _salaryCtrl,
                 validator: (value) {
                   if (value == '') {
